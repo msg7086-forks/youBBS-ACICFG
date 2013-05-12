@@ -3,7 +3,7 @@ define('IN_SAESPOT', 1);
 
 include(dirname(__FILE__) . '/config.php');
 include(dirname(__FILE__) . '/common.php');
-
+$theme = 'default';
 if (!$cur_user || $cur_user['flag']<99) exit('error: 403 Access Denied');
 
 $nid = intval($_GET['nid']);
@@ -69,8 +69,8 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
 $title = '分类管理';
 
 
-$pagefile = dirname(__FILE__) . '/templates/default/'.$tpl.'admin-node.php';
+$pagefile = dirname(__FILE__) . '/templates/'.$theme.'/'.$tpl.'admin-node.php';
 
-include(dirname(__FILE__) . '/templates/default/'.$tpl.'layout.php');
+include(dirname(__FILE__) . '/templates/'.$theme.'/'.$tpl.'layout.php');
 
 ?>

@@ -100,7 +100,7 @@ if($options['site_des']){
     $meta_des = htmlspecialchars($meta_des) .' - page '.$page;
 }
 
-$pagefile = dirname(__FILE__) . '/templates/default/'.$tpl.'indexpage.php';
+$pagefile = dirname(__FILE__) . '/templates/'.$theme.'/'.$tpl.'indexpage.php';
 
-include(dirname(__FILE__) . '/templates/default/'.$tpl.'layout.php');
+include(dirname(__FILE__) . '/templates/'.$theme.'/'.$tpl.'layout.php');
 

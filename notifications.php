@@ -38,8 +38,8 @@ if($cur_user['notic']){
 $title = '站内提醒';
 $newest_nodes = get_newest_nodes();
 
-$pagefile = dirname(__FILE__) . '/templates/default/'.$tpl.'notifications.php';
+$pagefile = dirname(__FILE__) . '/templates/'.$theme.'/'.$tpl.'notifications.php';
 
-include(dirname(__FILE__) . '/templates/default/'.$tpl.'layout.php');
+include(dirname(__FILE__) . '/templates/'.$theme.'/'.$tpl.'layout.php');
 
 ?>

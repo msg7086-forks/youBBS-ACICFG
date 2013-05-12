@@ -3,7 +3,7 @@ define('IN_SAESPOT', 1);
 
 include(dirname(__FILE__) . '/config.php');
 include(dirname(__FILE__) . '/common.php');
-
+$theme = 'default';
 $g_mid = $_GET['mid'];
 // mid 可能id或用户名，用户注册时要限制名字不能为全数字
 if(preg_match('/^[a-zA-Z0-9\x80-\xff]{1,20}$/i', $g_mid)){
@@ -74,8 +74,8 @@ $newest_nodes = get_newest_nodes();
 $canonical = '/member/'.$m_obj['id'];
 $meta_des = $m_obj['name'].' - '.htmlspecialchars(mb_substr($m_obj['about'], 0, 150, 'utf-8'));
 
-$pagefile = dirname(__FILE__) . '/templates/default/'.$tpl.'member.php';
+$pagefile = dirname(__FILE__) . '/templates/'.$theme.'/'.$tpl.'member.php';
 
-include(dirname(__FILE__) . '/templates/default/'.$tpl.'layout.php');
+include(dirname(__FILE__) . '/templates/'.$theme.'/'.$tpl.'layout.php');
 
 ?>

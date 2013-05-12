@@ -133,8 +133,8 @@ if($user_fav['articles']){
 $title = '个人收藏';
 $newest_nodes = get_newest_nodes();
 
-$pagefile = dirname(__FILE__) . '/templates/default/'.$tpl.'favorites.php';
+$pagefile = dirname(__FILE__) . '/templates/'.$theme.'/'.$tpl.'favorites.php';
 
-include(dirname(__FILE__) . '/templates/default/'.$tpl.'layout.php');
+include(dirname(__FILE__) . '/templates/'.$theme.'/'.$tpl.'layout.php');
 
 ?>

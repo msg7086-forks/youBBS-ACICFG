@@ -3,7 +3,7 @@ define('IN_SAESPOT', 1);
 
 include(dirname(__FILE__) . '/config.php');
 include(dirname(__FILE__) . '/common.php');
-
+$theme = 'default';
 if (!$cur_user) exit('error: 401 login please');
 if ($cur_user['flag']==0){
     exit('error: 403 Access Denied');
@@ -112,8 +112,8 @@ $title = '发新帖子';
 $img_max_w = 650;
 $newpost_page = '1';
 
-$pagefile = dirname(__FILE__) . '/templates/default/'.$tpl.'newpost.php';
+$pagefile = dirname(__FILE__) . '/templates/'.$theme.'/'.$tpl.'newpost.php';
 
-include(dirname(__FILE__) . '/templates/default/'.$tpl.'layout.php');
+include(dirname(__FILE__) . '/templates/'.$theme.'/'.$tpl.'layout.php');
 
 ?>

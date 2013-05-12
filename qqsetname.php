@@ -207,8 +207,8 @@ if(isset($gotohome)){
 $title = '设置名字';
 $logintype = "QQ";
 
-$pagefile = dirname(__FILE__) . '/templates/default/'.$tpl.'qqsetname.php';
+$pagefile = dirname(__FILE__) . '/templates/'.$theme.'/'.$tpl.'qqsetname.php';
 
-include(dirname(__FILE__) . '/templates/default/'.$tpl.'layout.php');
+include(dirname(__FILE__) . '/templates/'.$theme.'/'.$tpl.'layout.php');
 
 ?>

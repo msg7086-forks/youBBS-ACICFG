@@ -48,8 +48,8 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
 $title = '找回密码';
 
 
-$pagefile = dirname(__FILE__) . '/templates/default/'.$tpl.'forgot.php';
+$pagefile = dirname(__FILE__) . '/templates/'.$theme.'/'.$tpl.'forgot.php';
 
-include(dirname(__FILE__) . '/templates/default/'.$tpl.'layout.php');
+include(dirname(__FILE__) . '/templates/'.$theme.'/'.$tpl.'layout.php');
 
 ?>

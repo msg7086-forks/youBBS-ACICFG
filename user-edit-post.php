@@ -3,7 +3,7 @@ define('IN_SAESPOT', 1);
 
 include(dirname(__FILE__) . '/config.php');
 include(dirname(__FILE__) . '/common.php');
-
+$theme = 'default';
 if (!$cur_user) exit('error: 403 Access Denied');
 
 $tid = intval($_GET['tid']);
@@ -84,8 +84,8 @@ $title = '修改帖子 - '.$t_obj['title'];
 $img_max_w = 650;
 
 
-$pagefile = dirname(__FILE__) . '/templates/default/'.$tpl.'user-edit-post.php';
+$pagefile = dirname(__FILE__) . '/templates/'.$theme.'/'.$tpl.'user-edit-post.php';
 
-include(dirname(__FILE__) . '/templates/default/'.$tpl.'layout.php');
+include(dirname(__FILE__) . '/templates/'.$theme.'/'.$tpl.'layout.php');
 
 ?>

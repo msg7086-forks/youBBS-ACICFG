@@ -3,7 +3,7 @@ define('IN_SAESPOT', 1);
 
 include(dirname(__FILE__) . '/config.php');
 include(dirname(__FILE__) . '/common.php');
-
+$theme = 'default';
 
 if($cur_user){
     header('location: /');
@@ -211,8 +211,8 @@ if(isset($gotohome)){
 $title = '设置名字';
 $logintype = "微博";
 
-$pagefile = dirname(__FILE__) . '/templates/default/'.$tpl.'qqsetname.php';
+$pagefile = dirname(__FILE__) . '/templates/'.$theme.'/'.$tpl.'qqsetname.php';
 
-include(dirname(__FILE__) . '/templates/default/'.$tpl.'layout.php');
+include(dirname(__FILE__) . '/templates/'.$theme.'/'.$tpl.'layout.php');
 
 ?>

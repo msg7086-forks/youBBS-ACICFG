@@ -3,7 +3,7 @@ define('IN_SAESPOT', 1);
 
 include(dirname(__FILE__) . '/config.php');
 include(dirname(__FILE__) . '/common.php');
-
+$theme = 'default';
 /*
 // 屏蔽下面几行可以通过 用户名和密码 登录
 if(($options['qq_appid'] && $options['qq_appkey']) || ($options['wb_key'] && $options['wb_secret'])){
@@ -90,8 +90,8 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
 // 页面变量
 $title = '登 录';
 
-$pagefile = dirname(__FILE__) . '/templates/default/'.$tpl.'sigin_login.php';
+$pagefile = dirname(__FILE__) . '/templates/'.$theme.'/'.$tpl.'sigin_login.php';
 
-include(dirname(__FILE__) . '/templates/default/'.$tpl.'layout.php');
+include(dirname(__FILE__) . '/templates/'.$theme.'/'.$tpl.'layout.php');
 
 ?>

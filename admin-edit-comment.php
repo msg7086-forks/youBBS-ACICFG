@@ -3,7 +3,7 @@ define('IN_SAESPOT', 1);
 
 include(dirname(__FILE__) . '/config.php');
 include(dirname(__FILE__) . '/common.php');
-
+$theme = 'default';
 if (!$cur_user || $cur_user['flag']<99) exit('error: 403 Access Denied');
 
 $rid = intval($_GET['rid']);
@@ -34,8 +34,8 @@ $title = '修改评论';
 $img_max_w = 590;
 
 
-$pagefile = dirname(__FILE__) . '/templates/default/'.$tpl.'admin-edit-comment.php';
+$pagefile = dirname(__FILE__) . '/templates/'.$theme.'/'.$tpl.'admin-edit-comment.php';
 
-include(dirname(__FILE__) . '/templates/default/'.$tpl.'layout.php');
+include(dirname(__FILE__) . '/templates/'.$theme.'/'.$tpl.'layout.php');
 
 ?>

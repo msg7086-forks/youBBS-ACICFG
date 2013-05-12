@@ -3,7 +3,7 @@ define('IN_SAESPOT', 1);
 
 require(dirname(__FILE__) . '/config.php');
 require(dirname(__FILE__) . '/common.php');
-
+$theme = 'default';
 if (!$cur_user) exit('error: 401 login please');
 if ($cur_user['flag']==0){
     header("content-Type: text/html; charset=UTF-8");
@@ -188,8 +188,8 @@ $title = '设置';
 
 $newest_nodes = get_newest_nodes();
 
-$pagefile = dirname(__FILE__) . '/templates/default/'.$tpl.'setting.php';
+$pagefile = dirname(__FILE__) . '/templates/'.$theme.'/'.$tpl.'setting.php';
 
-include(dirname(__FILE__) . '/templates/default/'.$tpl.'layout.php');;
+include(dirname(__FILE__) . '/templates/'.$theme.'/'.$tpl.'layout.php');;
 
 ?>

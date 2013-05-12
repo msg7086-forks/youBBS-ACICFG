@@ -195,7 +195,7 @@ $meta_des = $c_obj['name'].' - '.$t_obj['author'].' - '.htmlspecialchars(mb_subs
 $img_max_w = 590;
 $canonical = '/t-'.$t_obj['id'];
 
-$pagefile = dirname(__FILE__) . '/templates/default/'.$tpl.'postpage.php';
+$pagefile = dirname(__FILE__) . '/templates/'.$theme.'/'.$tpl.'postpage.php';
 
-include(dirname(__FILE__) . '/templates/default/'.$tpl.'layout.php');
+include(dirname(__FILE__) . '/templates/'.$theme.'/'.$tpl.'layout.php');
 

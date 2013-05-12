@@ -15,6 +15,7 @@ if(strpos($path, '?') !== false)
 $pagefile = 'indexpage';
 $pageopt = array();
 $viewopt = array();
+$theme = 'default';
 
 // match static address
 $static_pages = array('/notifications', '/favorites', '/qqlogin', '/qqcallback', '/qqsetname', '/feed', '/robots', '/forgot');
