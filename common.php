@@ -114,11 +114,11 @@ $onlineip = addslashes($onlineip);
 $user_agent = strtolower($_SERVER['HTTP_USER_AGENT']);
 if($user_agent){
     $is_spider = preg_match('/(bot|crawl|spider|slurp|sohu-search|lycos|robozilla|google)/i', $user_agent);
-    $is_mobie = preg_match('/(iPod|iPhone|Android|Opera Mini|BlackBerry|webOS|UCWEB|Blazer|PSP)/i', $user_agent);
+    $is_mobie = preg_match('/(iPod|iPhone|Android|Opera Mini|BlackBerry|webOS|UCWEB|Blazer|PSP|Windows Phone|IEMobile)/i', $user_agent);
 
     if($is_mobie){
         // 设置模板前缀
-        $viewat = $_COOKIE['vtpl'];
+        $viewat = isset($_COOKIE['vtpl']) ? $_COOKIE['vtpl'] : '';
         if($viewat=='desktop'){
             $tpl = '';
         }else{
