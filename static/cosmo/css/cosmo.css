@@ -1,0 +1,126 @@
+body {
+	font-family: "微软雅黑", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+li.notice-0 {
+	display: none;
+}
+.media-body {
+	padding: 6px 0;
+}
+
+.mylabel {
+	padding: 2px 8px;
+	text-shadow: none;
+	background-color: #f7f7f7;
+	border-radius: 4px;
+	border: 1px solid #ccc;
+	margin: 4px;
+	white-space: nowrap;
+	color: #666;
+}
+
+a.mylabel:hover {
+	border: 1px solid #AAA;
+	text-decoration: none;
+	color: #000;
+}
+
+a.badge {
+	font-weight: 600;
+}
+.main-content {
+	margin-bottom: 20px;
+}
+.post-list {
+	background-color: white;
+	margin: 1px 0 0 0;
+	padding: 6px;
+	border-bottom: 1px solid #EFEFEF;
+	box-shadow: 0 1px 3px black;
+}
+.pager {
+	margin: 0;
+}
+.comment-count {
+	margin-top: 10px;
+	margin-right: 20px;
+}
+.comment-0 {
+	display: none;
+}
+.breadcrumb {
+	background-color: #eee;
+	border-radius: 10px 10px 0 0;
+	box-shadow: 0 1px 3px black;
+	margin-bottom: 0;
+}
+.breadcrumb > li {
+	line-height: 26px;
+}
+.sider-box {
+	border-bottom:1px solid #E2E2E2;
+	margin-bottom:20px;
+	border-radius:5px;
+	box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.15);
+	border-bottom: 2px solid #E2E2E9;
+}
+	.sider-box-title {
+		background-color: #eee;
+		border-radius: 10px 10px 0 0;
+		box-shadow: 0 1px 3px black;
+		margin-bottom: 0;
+
+		border-bottom:1px solid #E2E2E2;
+		padding:6px 10px;
+		color:#465567;
+	}
+	.sider-box-title a {
+		color: #465567;
+	}
+	.sider-box-content {
+		background-color: white;
+		padding: 6px;
+		border-bottom: 1px solid #EFEFEF;
+		box-shadow: 0 1px 3px black;
+	}
+	.sider-box-content ul {
+		list-style:none;
+	}
+	.sider-box-content ul li {
+		color:#999;
+		width:250px;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		margin-bottom:10px;
+		line-height:1.2em;
+	}
+	.sider-box-content ul li a {
+		color:#333;
+	}
+	.sider-box-content ul li a:hover {
+		color:#36C;
+	}
+
+footer {
+	background-color: white;
+	padding: 20px;
+	font-size: 12px;
+	box-shadow: inset 0 1px 3px black;
+	margin: 20px -20px 0 -20px;
+}
+
+@media (min-width: 768px) {
+	body {
+		padding-top: 80px;
+		background: url(/static/cosmo/img/bg.jpg) repeat-x fixed center;
+	}
+}
+@media (max-width: 767px) {
+	.mylabel {
+		padding: 0;
+	}
+	body {
+		background: #124071;
+	}
+}
